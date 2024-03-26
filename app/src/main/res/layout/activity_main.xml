@@ -14,18 +14,20 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="384dp"
         android:fontFamily="sans-serif-medium"
-        android:text="Популярные курсы"
+        android:text="Popular lessons"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <ImageButton
         android:id="@+id/search_filter"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginTop="120dp"
         android:layout_marginEnd="16dp"
-        android:text="Button"
+        android:background="@drawable/container"
+        android:backgroundTint="#3D8FEF"
+        android:src="@drawable/filter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,7 +38,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="42dp"
         android:fontFamily="sans-serif-medium"
-        android:text="TextView"
+        android:text="Greatings, Andrew!"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -47,21 +49,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:fontFamily="sans-serif-medium"
-        android:text="TextView"
+        android:text="Find your lessons today!"
         android:textColor="#8C8C8C"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/greatings" />
-
-    <Button
-        android:id="@+id/notifications"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="42dp"
-        android:layout_marginEnd="16dp"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -76,7 +68,7 @@
 
     <EditText
         android:id="@+id/editTextText2"
-        android:layout_width="36dp"
+        android:layout_width="50dp"
         android:layout_height="35dp"
         android:layout_marginTop="380dp"
         android:layout_marginEnd="16dp"
@@ -84,7 +76,7 @@
         android:ems="10"
         android:fontFamily="sans-serif-medium"
         android:inputType="text"
-        android:text="Ещё"
+        android:text="See all"
         android:textColor="#3D8FEF"
         android:textColorHint="#3D8FEF"
         android:textColorLink="#3D8FEF"
@@ -113,9 +105,11 @@
 
                 <View
                     android:id="@+id/card1"
-                    android:layout_width="match_parent"
+                    android:layout_width="210dp"
                     android:layout_height="match_parent"
-                    android:background="@drawable/container" />
+                    android:background="@drawable/container"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/item_name"
@@ -143,12 +137,11 @@
                     android:id="@+id/preview_image"
                     android:layout_width="match_parent"
                     android:layout_height="120dp"
+                    android:layout_marginStart="8dp"
                     android:layout_marginTop="16dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
+                    android:src="@drawable/back2"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:src="@drawable/back2" />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
                     android:id="@+id/time_image"
@@ -200,9 +193,11 @@
 
                 <View
                     android:id="@+id/card2"
-                    android:layout_width="match_parent"
+                    android:layout_width="210dp"
                     android:layout_height="match_parent"
-                    android:background="@drawable/container" />
+                    android:background="@drawable/container"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/item_name2"
@@ -230,12 +225,11 @@
                     android:id="@+id/preview_image2"
                     android:layout_width="match_parent"
                     android:layout_height="120dp"
+                    android:layout_marginStart="8dp"
                     android:layout_marginTop="16dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
+                    android:src="@drawable/back1"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:src="@drawable/back1" />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
                     android:id="@+id/time_image2"
@@ -303,7 +297,9 @@
             android:layout_width="77dp"
             android:layout_height="77dp"
             android:background="#FFFFFF"
-            android:src="@drawable/home" />
+            android:backgroundTint="#FFFFFF"
+            android:src="@drawable/home"
+            android:tint="#3D8FEF" />
 
         <ImageButton
             android:id="@+id/education_button"
@@ -330,5 +326,52 @@
             android:src="@drawable/account" />
 
     </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/notifications"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bell" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="267dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="120dp"
+        android:layout_weight="1"
+        android:background="@drawable/container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/search" />
+
+        <TextView
+            android:id="@+id/search"
+            android:layout_width="202dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="Search now..."
+            android:textAlignment="textStart"
+            android:textColor="#8C8C8C"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
