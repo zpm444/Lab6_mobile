@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="384dp"
+        android:layout_marginTop="364dp"
         android:fontFamily="sans-serif-medium"
         android:text="Popular lessons"
         android:textSize="16sp"
@@ -58,19 +58,19 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="0dp"
-        android:layout_height="240dp"
+        android:layout_height="220dp"
         android:layout_marginTop="168dp"
+        android:src="@drawable/main_back"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/main_back" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextText2"
         android:layout_width="50dp"
         android:layout_height="35dp"
-        android:layout_marginTop="380dp"
+        android:layout_marginTop="362dp"
         android:layout_marginEnd="16dp"
         android:clickable="true"
         android:ems="10"
@@ -87,7 +87,7 @@
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:layout_marginBottom="110dp"
+        android:layout_marginBottom="80dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -149,9 +149,9 @@
                     android:layout_height="23dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginBottom="16dp"
+                    android:src="@drawable/time2"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    android:src="@drawable/time2" />
+                    app:layout_constraintStart_toStartOf="parent" />
 
                 <ImageView
                     android:id="@+id/rating_image"
@@ -159,9 +159,9 @@
                     android:layout_height="23dp"
                     android:layout_marginEnd="16dp"
                     android:layout_marginBottom="16dp"
+                    android:src="@drawable/rating"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    android:src="@drawable/rating" />
+                    app:layout_constraintEnd_toEndOf="parent" />
 
                 <ImageView
                     android:id="@+id/heart_circle"
@@ -169,9 +169,9 @@
                     android:layout_height="28dp"
                     android:layout_marginTop="24dp"
                     android:layout_marginEnd="33dp"
+                    android:src="@drawable/heart_circle"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:src="@drawable/heart_circle" />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
                     android:id="@+id/circle"
@@ -179,10 +179,10 @@
                     android:layout_height="28dp"
                     android:layout_marginTop="24dp"
                     android:layout_marginEnd="33dp"
+                    android:src="@drawable/heart"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:tint="#B6B6B6"
-                    android:src="@drawable/heart" />
+                    app:tint="#B6B6B6" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -237,9 +237,9 @@
                     android:layout_height="23dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginBottom="16dp"
+                    android:src="@drawable/item1"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    android:src="@drawable/item1" />
+                    app:layout_constraintStart_toStartOf="parent" />
 
                 <ImageView
                     android:id="@+id/rating_image2"
@@ -247,9 +247,9 @@
                     android:layout_height="23dp"
                     android:layout_marginEnd="16dp"
                     android:layout_marginBottom="16dp"
+                    android:src="@drawable/rating"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    android:src="@drawable/rating" />
+                    app:layout_constraintEnd_toEndOf="parent" />
 
                 <ImageView
                     android:id="@+id/heart_circle2"
